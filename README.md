@@ -1,0 +1,1 @@
+# Brown-eared-pheasant-3g-genome
