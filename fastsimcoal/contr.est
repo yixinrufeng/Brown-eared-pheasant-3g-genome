@@ -1,0 +1,16 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max
+//all Ns are in number of haploid individuals
+1  NMB	logunif	100	100000	output
+1	NANC	logunif	100	100000	output
+1       T1      unif 10 20000   output
+[RULES]
+NMB < NANC
+[COMPLEX PARAMETERS]
+0       RATIO   =       NANC/NMB        hide
+0       RTEA    =       log(RATIO)      hide
+0       R1      =       RTEA/T1        hide
+

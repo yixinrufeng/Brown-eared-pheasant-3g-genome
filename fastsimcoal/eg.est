@@ -1,0 +1,18 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max
+//all Ns are in number of haploid individuals
+1	NMR	logunif	100	100000	output
+1	NMB	logunif	100	100000	output
+0	MIG1	logunif	0.000001 0.001	output
+0	MIG2	logunif	0.000001 0.001	output
+0	MIG3	logunif 0.000001 0.001	output
+0	MIG4	logunif 0.000001 0.001	output
+0	TPROP	logunif 0.0001	 0.5	output
+1	TSP	unif	10	20000	output
+
+[COMPLEX PARAMETERS]
+1	CHANGM = TSP*TPROP	output
+1	NANC	=	NMR+NMB	output
