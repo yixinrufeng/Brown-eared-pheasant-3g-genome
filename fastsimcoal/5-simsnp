@@ -1,0 +1,1 @@
+fsc26 -i bestModel_maxL_boot.par -n 100 -s 0 -I -q -g -c4 -B4
